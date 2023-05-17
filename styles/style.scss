@@ -12,7 +12,6 @@ $buttonShadow2: #070707 8px 8px 0 0;
 @mixin flex {
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-evenly;
 }
 @mixin spriteBorder {
@@ -21,6 +20,7 @@ $buttonShadow2: #070707 8px 8px 0 0;
 
 * {
     margin: 0;
+    padding: 0;
     user-select: none;
 }
 
@@ -135,13 +135,11 @@ h1 {
     -webkit-user-select: none;
     touch-action: manipulation;
     font-family: "Press Start 2P", serif;
-}
-
-#startButton:hover {
-    background-color: $color2;
-}
-
-#startButton:active {
-    box-shadow: $buttonShadow1;
-    transform: translateY(5px);
+    &:hover {
+        background-color: $color2;
+    }
+    &:active {
+        box-shadow: $buttonShadow1;
+        transform: translateY(5px);
+    }
 }

@@ -9,7 +9,7 @@ const characterList = [
     {
         id: "sprite2",
         name: "Alex Scorpion",
-        role: "",
+        role: "Samurguy",
         source: "./avatars/alex scorpion.png",
         description: "",
     },
