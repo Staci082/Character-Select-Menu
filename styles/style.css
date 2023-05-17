@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #252329;
+  padding-top: 5vh;
+  font-family: "Press Start 2P", serif;
+  color: white;
+  font-size: 18px;
+  text-shadow: 5px 5px #000;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 90vw;
+  height: 90vh;
+}
+
+#spriteContainer {
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+}
+
+.spriteBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 100px;
+  height: 100px;
+  border: 4px solid #46ebe3;
+  box-shadow: #070707 4px 4px 0 0;
+  background-color: #252329;
+  padding: 2px;
+}
+.spriteBox img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.spriteBox:hover {
+  border: 4px solid #fb6ffb;
+  transform: translateY(5px);
+  transform: scale(1.2);
+  box-shadow: #070707 8px 8px 0 0;
+}
+.spriteBox:active {
+  border: 4px solid #fb6ffb;
+  transform: scale(1.2);
+  box-shadow: #070707 8px 8px 0 0;
+}
+.spriteBox:focus {
+  border: 4px solid #fb6ffb;
+  box-shadow: #070707 8px 8px 0 0;
+  animation: mover 1s infinite alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes mover {
+  100% {
+    transform: translateY(-10px);
+  }
+}
+#selectedContainer {
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 35vw;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+#selectedSprite {
+  height: 30vh;
+  width: auto;
+  margin-bottom: 40px;
+}
+
+#spriteName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+#description {
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#summary {
+  width: 30vw;
+  height: 40vh;
+}
+
+#startButton {
+  width: 200px;
+  height: 50px;
+  background-color: #46ebe3;
+  border: 2px solid #0d0d0d;
+  box-shadow: #070707 8px 8px 0 0;
+  color: #020202;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-family: "Press Start 2P", serif;
+}
+
+#startButton:hover {
+  background-color: #fb6ffb;
+}
+
+#startButton:active {
+  box-shadow: #070707 4px 4px 0 0;
+  transform: translateY(5px);
+}/*# sourceMappingURL=style.css.map */
